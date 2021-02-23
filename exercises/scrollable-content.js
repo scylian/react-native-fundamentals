@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, ScrollView } from "react-native";
 
 const styles = StyleSheet.create({
   container: { backgroundColor: "#fff" },
@@ -18,4 +18,22 @@ const Square = ({ text, bgColor = "#7ce0f9" }) => (
   </View>
 );
 
-export default () => null;
+export default () => (
+  <ScrollView style={styles.container}>
+    <Square text="Square 1" />
+    <Square text="Square 2" />
+    <Square text="Square 3" />
+    <Square text="Square 4" />
+    <Square text="Square 5" />
+    <Square text="Square 6" />
+    <Square text="Square 7" />
+    <Square text="Square 8" />
+    <Square text="Square 9" />
+    <Square text="Square 10" />
+    <Square text="Square 11" />
+    <Square text="Square 12" />
+    <Square text="Square 13" />
+    <Square text="Square 14" />
+    <Square text="Square 15" />
+  </ScrollView>
+);
